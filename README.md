@@ -1,4 +1,17 @@
 # 
+## Data
+### train
+- train_x
+  - ID : 사람 별 부여되는 ID (train - 총 3125개)
+  - time : ID 1개당 600time의 data가 있음.
+  - action_data : 행동데이터로 (acc_x, acc_y, acc_z, gy_x, gy_y, gy_z)로 구성됨.
+  - id 3125 * time 600 = 총 1875000개의 데이터
+- train_y
+  - labels : ID하나당 label 1개 , 즉 600time의 동작data를 보아 이 사람은 이 운동을 하는 중.
+### test
+- 어떤 사람의(ID의) 600time 동작데이터를 보고 어떤운동(label)을 하는지 예측하는 문제.
+- ID(782)별 600time의 동작(4)데이터
+- id 782 * time 600 = 총 469200개의 데이터
 
 ## 실험 protocol
 - defalut
