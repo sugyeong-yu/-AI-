@@ -13,6 +13,9 @@
 - 일반GRU가 biGRU보다 성능우수
 - unit개수는 일정한것 보다 확장되는것이 성능이 더 우수함.
 - optimizer = adam? rmsprop?
+- dropout ?
+- batch_norm ?
+
 
 
 ## Model
