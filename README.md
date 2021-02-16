@@ -28,6 +28,8 @@
 |5|biGRU4개+earlystopping|1.7746|epoch17에서 stop|
 |6|cnn-lstm|**1.3957**|filter=128, maxpooling, spatialDropout=0.4,LSTM unit32|
 |7|cnn-lstm|1.4566|filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, epoch 1000으로 늘림|
+|8|cnn-lstm|1.5370 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림|
+|9|cnn-lstm|1.5370 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림, epoch1000|
 
 - 일반GRU가 biGRU보다 성능우수
 - unit개수는 일정한것 보다 확장되는것이 성능이 더 우수함.
