@@ -1,6 +1,11 @@
 # 
 
 ## 실험 protocol
+- defalut
+  - batch_size = 32
+  - epochs = 100
+  - earlystopping = 10
+  
 |Protocol|Model|val_loss|특이사항|
 |---|---|---|---|
 |1|base_line(lstm)||lstm 1개사용|
