@@ -26,14 +26,18 @@
 |3|biGRU2개+earlystopping|1.8694|units 모두 30으로 사용, epoch24에서 stop|
 |4|biGRU2개+earlystopping|1.7874|units32->64,epoch25에서 stop| 
 |5|biGRU4개+earlystopping|1.7746|epoch17에서 stop|
-|6|cnn-lstm|**1.3957**|filter=128, maxpooling, spatialDropout=0.4,LSTM unit32|
+|6|cnn-lstm|1.3957|filter=128, maxpooling, spatialDropout=0.4,LSTM unit32|
 |7|cnn-lstm|1.4566|filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, epoch 1000으로 늘림|
-|8|cnn-lstm|1.5370 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림|
-|9|cnn-lstm|1.3853 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림, epoch1000|
-|9|cnn-lstm|1.3614 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림, epoch1000, adam -> rmsprop|
+|8|cnn2-lstm|1.5370 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림|
+|9|cnn2-lstm|1.3853 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림, epoch1000|
+|10|cnn2-lstm|1.3614 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림, epoch1000, adam -> rmsprop|
+|11|cnn2-lstm|1.4994 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림, epoch1000, adam -> rmsprop, batch=16|
+|12|cnn2-Bilstm|**1.0629** |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림, epoch1000, adam -> rmsprop|
+|13|cnn2-Bilstm2||filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, epoch1000, adam -> rmsprop|
 
 - 일반GRU가 biGRU보다 성능우수
 - unit개수는 일정한것 보다 확장되는것이 성능이 더 우수함.
+- 배치는 16보다 32가 더 우수
 - optimizer = adam? rmsprop?
 - dropout ?
 - batch_norm ?
