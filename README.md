@@ -32,8 +32,8 @@
 |9|cnn2-lstm|1.3853 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림, epoch1000|
 |10|cnn2-lstm|1.3614 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림, epoch1000, adam -> rmsprop|
 |11|cnn2-lstm|1.4994 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림, epoch1000, adam -> rmsprop, batch=16|
-|12|cnn2-Bilstm|**1.0629** |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림, epoch1000, adam -> rmsprop|
-|13|cnn2-Bilstm2||filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, epoch1000, adam -> rmsprop|
+|12|cnn2-Bilstm|1.0629 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, cnn 1층 늘림, epoch1000, adam -> rmsprop|
+|13|cnn2-Bilstm2|**0.9169** |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, epoch1000, adam -> rmsprop|
 
 - 일반GRU가 biGRU보다 성능우수
 - unit개수는 일정한것 보다 확장되는것이 성능이 더 우수함.
