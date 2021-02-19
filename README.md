@@ -38,17 +38,16 @@
 |14|cnn2-Bilstm2|0.8615 |filter=128, maxpooling,LSTM unit32,64, epoch1000, adam -> rmsprop, Dropout뺌|
 |15|aug2_cnn2-Bilstm3|**0.1643** |filter=128, maxpooling,LSTM unit32,64,128 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
 |16|**aug1_cnn2-Bilstm3**|0.8511|filter=128, maxpooling,LSTM unit32,64,128 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
-|17|aug1_cnn2-Bilstm3|0.9857|filter=128, maxpooling,LSTM unit32,64,128 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**, DROPOUT추가|
+|17|aug1_cnn2-Bilstm3|0.9857|filter=128, maxpooling,LSTM unit32,64,128 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
 
 - 일반GRU가 biGRU보다 성능우수
 - unit개수는 일정한것 보다 확장되는것이 성능이 더 우수함.
 - 배치는 16보다 32가 더 우수
-- optimizer = adam? rmsprop?
-- dropout ?
-- batch_norm ?
+- 드롭아웃 안하는게 더 성능 좋음
+- optimizer = adam < rmsprop
 - [15] : 데이터 증강한게 훨씬 성능 잘나오나 test낮음 , test log loss는 1.02
-- 시작부터 train과 val 분리 후 데이터 증강 및 학습 
-
+- 시작부터 train과 val 분리 후 데이터 증강 및 학습 -> val_loss와의 차이가 줄어듬, 가장 성능이 좋았음 test_loss는 약 0.9
+- 레이어가 많을수록?
 
 ## Model
 ### cnn-lstm
