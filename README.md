@@ -37,6 +37,7 @@
 |13|cnn2-Bilstm2|0.9169 |filter=128, maxpooling, spatialDropout=0.4,LSTM unit32, epoch1000, adam -> rmsprop|
 |14|cnn2-Bilstm2|0.8615 |filter=128, maxpooling,LSTM unit32,64, epoch1000, adam -> rmsprop, Dropout뺌|
 |15|cnn2-Bilstm3|**0.1643** |filter=128, maxpooling,LSTM unit32,64, epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**, lstm 늘림|
+|16|cnn2-Bilstm3|**0.1643** |filter=128, maxpooling,LSTM unit32,64, epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**, lstm 늘림|
 
 - 일반GRU가 biGRU보다 성능우수
 - unit개수는 일정한것 보다 확장되는것이 성능이 더 우수함.
@@ -44,7 +45,8 @@
 - optimizer = adam? rmsprop?
 - dropout ?
 - batch_norm ?
-
+- [15} : 데이터 증강한게 훨씬 성능 잘나오나 test낮음 , test log loss는 1.02
+- 시작부터 train과 val 분리 후 데이터 증강 및 학습 
 
 
 ## Model
