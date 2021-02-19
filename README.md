@@ -40,7 +40,7 @@
 |16|**aug1_cnn2-Bilstm3**|0.8511|filter=128, maxpooling,LSTM unit32,64,128 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
 |17|aug1_cnn2-Bilstm3|0.9857|filter=128, maxpooling,LSTM unit32,64,128 epoch1000, adam -> rmsprop, **Data증강**|
 |18|aug1_cnn3-Bilstm3|0.9620|filter=128, maxpooling,LSTM unit32,64,128 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
-|19|aug1_cnn3-Bilstm2||filter=128, maxpooling,LSTM unit32,64 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
+|19|aug1_cnn3-Bilstm2|**0.8022**|filter=128, maxpooling,LSTM unit32,64 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
 - 일반GRU가 biGRU보다 성능우수
 - unit개수는 일정한것 보다 확장되는것이 성능이 더 우수함.
 - 배치는 16보다 32가 더 우수
