@@ -41,7 +41,7 @@
 |17|aug1_cnn2-Bilstm3|0.9857|filter=128, maxpooling,LSTM unit32,64,128 epoch1000, adam -> rmsprop, **Data증강**|
 |18|aug1_cnn3-Bilstm3|0.9620|filter=128, maxpooling,LSTM unit32,64,128 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
 |19|aug1_cnn3-Bilstm2|0.8022|filter=128, maxpooling,LSTM unit32,64 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
-|20|aug1_cnn2-BiGRU2||filter=128, maxpooling,GRU unit32,64 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
+|20|aug1_cnn2-Bilstm4||filter=128, maxpooling,GRU unit32,64 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
 - 일반GRU가 biGRU보다 성능우수
 - unit개수는 일정한것 보다 확장되는것이 성능이 더 우수함.
 - 배치는 16보다 32가 더 우수
@@ -50,7 +50,9 @@
 - [15] : 데이터 증강한게 훨씬 성능 잘나오나 test낮음 , test log loss는 1.02
 - 시작부터 train과 val 분리 후 데이터 증강 및 학습 -> val_loss와의 차이가 줄어듬, 가장 성능이 좋았음 test_loss는 약 0.9
 - 레이어가 많을수록 성능줄어드는듯.
-- cnn이더 많을수록? lstm이 더 많을수록?
+- cnn보다 lstm이 더 많을수록 test성능이 좋음
+- bilstm이 bigru보다 성능 좋음
+- lstm하나더 해보고 성능별로면 데이터증강 한번더해보기
 
 ## Model
 ### cnn-lstm
