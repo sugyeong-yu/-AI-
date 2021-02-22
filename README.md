@@ -42,6 +42,7 @@
 |18|aug1_cnn3-Bilstm3|0.9620|filter=128, maxpooling,LSTM unit32,64,128 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
 |19|aug1_cnn3-Bilstm2|0.8022|filter=128, maxpooling,LSTM unit32,64 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
 |20|aug1_cnn2-Bilstm4|0.8790|filter=128, maxpooling,GRU unit32,64 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강**|
+|21|aug2_cnn2-Bilstm3| |filter=128, maxpooling,GRU unit32,64 epoch1000, adam -> rmsprop, Dropout뺌, **Data증강2번**|
 - 일반GRU가 biGRU보다 성능우수
 - unit개수는 일정한것 보다 확장되는것이 성능이 더 우수함.
 - 배치는 16보다 32가 더 우수
@@ -52,7 +53,8 @@
 - 레이어가 많을수록 성능줄어드는듯.
 - cnn보다 lstm이 더 많을수록 test성능이 좋음
 - bilstm이 bigru보다 성능 좋음
-- lstm하나더 해보고 성능별로면 데이터증강 한번더해보기
+- lstm3개가 4개보다 성능좋았음
+- 데이터증강 한번더해보기
 
 ## Model
 ### cnn-lstm
